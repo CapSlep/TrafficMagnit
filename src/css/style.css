@@ -1,0 +1,273 @@
+/* ============================================================ BASE STYLE EDIT BLOCK ============================================================ */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  line-height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  color: #222B3C;
+  font-family: "Halvar Breitschrift Regular", sans-serif;
+  font-size: clamp(1rem, 0.3rem + 3.5vw, 1.5rem);
+  transition: all 0.1s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+input,
+button,
+textarea {
+  font-family: "Pan Display", sans-serif;
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+  outline-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+body.lock {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+p {
+  font-size: clamp(1rem, 0.3rem + 3.5vw, 1.5rem);
+  margin: 0;
+}
+
+ol {
+  list-style-type: none;
+  text-align: center;
+  font-size: clamp(1rem, 0.3rem + 3.5vw, 1.5rem);
+  padding-left: 0;
+}
+
+.container {
+  padding: 0 2rem;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* ============================= HEADER BLOCK ============================= */
+.header {
+  height: 5rem;
+  box-shadow: 0px 4px 20px 4px #dfdfdf;
+}
+
+.header__wrapper {
+  height: 100%;
+}
+
+.header__left {
+  align-items: center;
+}
+
+.header__title {
+  font-size: clamp(1.5rem, 0.3rem + 3.5vw, 2rem);
+  font-weight: 600;
+}
+
+.header__left-img-wrapper {
+  height: 100%;
+  width: 20%;
+  padding-right: 1rem;
+}
+
+/* ============================= HERO BLOCK ============================= */
+.hero__wrapper {
+  padding: 2rem 0;
+  gap: 2rem;
+}
+
+.hero__text-section {
+  gap: 0.5rem;
+}
+
+.hero__title {
+  font-size: clamp(2rem, 0.3rem + 3.5vw, 3rem);
+  font-weight: 600;
+}
+
+.hero__paragraph {
+  text-wrap: balance;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-left: 20px;
+}
+
+.list__item-unordered {
+  list-style: disc;
+}
+
+.choose__title {
+  text-align: center;
+}
+
+.choose__item-title {
+  font-weight: 600;
+  text-align: center;
+}
+
+.choose__item-text {
+  text-wrap: balance;
+  text-align: center;
+  font-size: clamp(1rem, 0.3rem + 3.5vw, 1.5rem);
+}
+
+.choose__section {
+  align-items: center;
+}
+
+.choose__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 0;
+  /* Makes all flex items the same height */
+  justify-content: center;
+}
+
+.choose__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+  flex: 1 1 45%;
+  box-sizing: border-box;
+}
+
+/* ============================= FOOTER BLOCK ============================= */
+.hero__wrapper {
+  padding: 2rem 0;
+  gap: 2rem;
+}
+
+.footer__text-section {
+  gap: 0.5rem;
+}
+
+.footer__title {
+  font-size: clamp(2rem, 0.3rem + 3.5vw, 3rem);
+  font-weight: 600;
+}
+
+.footer__paragraph {
+  text-wrap: balance;
+}
+
+.footer {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  box-shadow: 0px -10px 20px 4px #dfdfdf;
+}
+
+/* ============================= GENERAL BLOCK ============================= */
+@media (min-width: 1440px) {
+  #root {
+    height: 100%;
+  }
+}
+.page__wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: #C8CBC7;
+  justify-content: space-between;
+}
+
+.hyperlink {
+  text-decoration: underline;
+}
+
+/*
+ *  STYLE 1
+ */
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(34, 43, 60, 0.1);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(34, 43, 60, 0.1);
+  background-color: #555;
+}

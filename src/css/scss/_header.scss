@@ -1,0 +1,28 @@
+@use 'variables';
+
+/* ============================= HEADER BLOCK ============================= */
+
+.header {
+    height: 5rem;
+    box-shadow: 0px 4px 20px 4px #dfdfdf;
+}
+
+.header__wrapper {
+    height: 100%;
+}
+
+.header__left {
+    align-items: center;
+}
+
+.header__title {
+    font-size: variables.$font-size-big;
+
+    font-weight: 600;
+}
+
+.header__left-img-wrapper {
+    height: 100%;
+    width: 20%;
+    padding-right: 1rem;
+}

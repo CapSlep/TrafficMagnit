@@ -1,0 +1,70 @@
+@use 'variables';
+
+/* ============================= HERO BLOCK ============================= */
+
+.hero__wrapper {
+    padding: 2rem 0;
+    gap: 2rem;
+}
+
+.hero__text-section {
+    gap: .5rem;
+}
+
+.hero__title {
+    font-size: variables.$font-size-huge;
+    font-weight: 600;
+}
+
+.hero__paragraph {
+    text-wrap: balance;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    padding-left: 20px;
+}
+
+.list__item-unordered {
+    list-style: disc;
+}
+
+.choose__title {
+
+    text-align: center;
+}
+
+.choose__item-title {
+    font-weight: 600;
+    text-align: center;
+}
+
+.choose__item-text {
+    text-wrap: balance;
+    text-align: center;
+    font-size: variables.$font-size-regular;
+}
+
+.choose__section {
+    align-items: center;
+}
+
+.choose__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 0;
+    /* Makes all flex items the same height */
+    justify-content: center;
+}
+
+.choose__item {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    list-style: none;
+    flex: 1 1 45%;
+    box-sizing: border-box;
+}

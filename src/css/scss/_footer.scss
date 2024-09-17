@@ -1,0 +1,27 @@
+@use 'variables';
+
+/* ============================= FOOTER BLOCK ============================= */
+
+.hero__wrapper {
+    padding: 2rem 0;
+    gap: 2rem;
+}
+
+.footer__text-section {
+    gap: .5rem;
+}
+
+.footer__title {
+    font-size: variables.$font-size-huge;
+    font-weight: 600;
+}
+
+.footer__paragraph {
+    text-wrap: balance;
+}
+
+.footer {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    box-shadow: 0px -10px 20px 4px #dfdfdf;
+}
